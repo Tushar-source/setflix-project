@@ -32,6 +32,9 @@ export class ThumbnailComponent implements OnInit {
       
     }
   }
+  onImgError(event:any) { 
+    event.target.src = 'https://picsum.photos/250/150';
+  }
   setDetails(a:any){
     console.log(a);
     //console.log();
